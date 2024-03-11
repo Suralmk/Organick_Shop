@@ -8,8 +8,8 @@ const News = ({neww}) => {
             <p>{neww.date}</p>
             <div className="news-content">
                 <p>{neww.author}</p>
-                <h2>{neww.title}</h2>
-                <p>{neww.sub_title}</p>
+                <h5>{neww.title}</h5>
+                <p className='text'>{neww.sub_title}</p>
                 <a className='button-two'> Read Moew</a>
             </div>
     </div>
