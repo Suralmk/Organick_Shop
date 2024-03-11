@@ -4,6 +4,10 @@ import { Logo } from '../../assets/images'
 import { BiSearch, BiCart  } from "react-icons/bi";
 
 const Navbar = () => {
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar-container')
+    navbar.classList.toggle('sticky', this.window.scrollY > 1)
+  })
   return (
     <div className='navbar-container'>
       <div className='navbar-logo'>

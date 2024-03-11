@@ -180,30 +180,32 @@ const Homepage = () => {
       </div>
 
       {/* Second banner  Section */}
-      <div className="homepage-second-banner_container">
-            <div className="homepage-second-banner_wrapper">
-              {
-                banner2.map((banner, key) => (
-                  <Banner2 key={key} image={banner.image} content ={banner.content}/>
-                ))
-              }
-            </div>
+      <div className='homepage-second-banner_container'>
+        <div className='homepage-second-banner_wrapper'>
+          {banner2.map((banner, key) => (
+            <Banner2 key={key} image={banner.image} content={banner.content} />
+          ))}
+        </div>
       </div>
 
       {/*Home News  Section */}
-      <div className="homepage-news_container">
-            <div className="homepage-news_wrapper">
-              {
-                news.map((neww, key) => 
-                {
-                  if (key >= 2) return null
-
-                  return (
-                  <News key={key} neww={neww} />
-                )
-                })
-              }
+      <div className='homepage-news_container'>
+        <div className='homepage-news_wrapper'>
+          <div className='news-header'>
+            <div className='news-title'>
+              <p className='curly-text'>Offer</p>
+              <h2>Discover weekly content about organic food, & more</h2>
             </div>
+            <button className='button-three'>More News</button>
+          </div>
+          <div className='homepage-news'>
+            {news.map((neww, index) => {
+              if (index >= 2) return null
+
+              return <News key={index} neww={neww} />
+            })}
+          </div>
+        </div>
       </div>
     </div>
   )

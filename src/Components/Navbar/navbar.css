@@ -5,6 +5,15 @@
     justify-content: space-between;
     align-items: center;
 }
+ .sticky {
+    padding: 20px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background: white;
+    transition: all 0.4s;
+}
+
 .navbar-logo a {
     font-size: 40px;
     align-items: center;

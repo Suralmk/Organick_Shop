@@ -122,7 +122,7 @@ const news = [
     },
     {
         "image" : juice,
-        "date" :"2024",
+        "date" :"DEC 03",
         "author": "Surafel Melaku",
         "title":"Why is it better for us if we use organick's products.",
         "sub_title" : "Simply dummy text of the printing and typesetting  industry. Lorem Ipsum"

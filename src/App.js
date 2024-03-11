@@ -5,11 +5,13 @@ import axios from 'axios'
 import { Routes, BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import products from './Constants/data'
 import Homepage from './Container/Homepage/Homepage'
+import Footer from './Components/Footer/Footer'
 function App () {
   return (
     <div className=''>
       <Navbar />
       <Homepage />
+      <Footer />
       
     </div>
   )
