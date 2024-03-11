@@ -45,3 +45,9 @@
 .sticky + .blogdetail-container {
   padding-top: 105px;
 }
+.sticky + .shop-container {
+  padding-top: 105px;
+}
+.sticky + .shopdetail-container {
+  padding-top: 105px;
+}

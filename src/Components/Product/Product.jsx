@@ -1,5 +1,6 @@
 import React from 'react'
 import { fruits } from '../../assets/images'
+import { Link } from 'react-router-dom'
 import './product.css'
 const Product = ({product}) => {
   return (
@@ -8,7 +9,7 @@ const Product = ({product}) => {
       <div className='product-image'>
         <img src={product.image} alt='' />
       </div>
-      <h5 className='profuct-name'>{product.name}</h5>
+      <Link to="/shop-detail"><h5 className='profuct-name'>{product.name}</h5></Link>
 
       <hr />
       <div className='product-bottom-section'>

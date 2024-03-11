@@ -17,7 +17,7 @@ const News = ({ neww }) => {
           <IoMdPerson size={25} className='news-auth-icon '/>
           {neww.author}
         </p>
-        <Link to="blog-detail"><h5>{neww.title}</h5></Link>
+        <Link to="/blog-detail"><h5>{neww.title}</h5></Link>
         <p className='text'>{neww.sub_title}</p>
         <a className='button-two'> Read More</a>
       </div>

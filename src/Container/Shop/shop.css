@@ -1,0 +1,11 @@
+.shop-products {
+    padding: 120px 90px;
+    max-width: 1450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-gap: 30px;
+}
+.shop-products .product-container {
+    width: 100%;
+}

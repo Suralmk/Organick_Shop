@@ -12,14 +12,14 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
       <div className='navbar-logo'>
-        <a href="">
+        <Link to="/">
           <img src={Logo} alt="" />
-          <p>Organick</p></a>
+          <p>Organick</p></Link>
       </div>
       <div className='navbar-menus'>
         <ul>
           <li>
-            <a href='#'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
             <a href='#'>About</a>
@@ -28,13 +28,13 @@ const Navbar = () => {
             <a href='#'>Pages</a>
           </li>
           <li>
-            <a href='#'>Shop</a>
+            <Link to='/shop'>Shop</Link>
           </li>
           <li>
             <a href='#'>Project</a>
           </li>
           <li>
-            <Link to={'news'}>News</Link>
+            <Link to='/news'>News</Link>
           </li>
         </ul>
       </div>
