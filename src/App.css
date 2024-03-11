@@ -39,3 +39,6 @@
 .sticky + .homepage-container {
   padding-top: 105px;
 }
+.sticky + .blog-container {
+  padding-top: 105px;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { Logo } from '../../assets/images'
 import { BiSearch, BiCart  } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   window.addEventListener('scroll', function () {
@@ -33,7 +34,7 @@ const Navbar = () => {
             <a href='#'>Project</a>
           </li>
           <li>
-            <a href='#'>News</a>
+            <Link to={'news'}>News</Link>
           </li>
         </ul>
       </div>
