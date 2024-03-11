@@ -7,6 +7,7 @@ import products from './Constants/data'
 import Homepage from './Container/Homepage/Homepage'
 import Footer from './Components/Footer/Footer'
 import Blog from './Container/Blog/Blog'
+import BlogDetail from './Container/BlogDetail/BlogDetail'
 function App () {
   return (
     <div className=''>
@@ -14,6 +15,7 @@ function App () {
       <Router>
         <Route path='' element={<Homepage />} />
         <Route path='/news' element={<Blog />} />
+        <Route path='/blog-detail' element={<BlogDetail />} />
       </Router>
 
       <Footer />

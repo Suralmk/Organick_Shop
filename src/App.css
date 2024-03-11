@@ -42,3 +42,6 @@
 .sticky + .blog-container {
   padding-top: 105px;
 }
+.sticky + .blogdetail-container {
+  padding-top: 105px;
+}

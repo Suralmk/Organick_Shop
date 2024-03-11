@@ -14,10 +14,10 @@ const News = ({ neww }) => {
           alignItems: "center"
         }}>
           {' '}
-          <IoMdPerson size={25} className='news-auth-icon'/>
+          <IoMdPerson size={25} className='news-auth-icon '/>
           {neww.author}
         </p>
-        <h5>{neww.title}</h5>
+        <Link to="blog-detail"><h5>{neww.title}</h5></Link>
         <p className='text'>{neww.sub_title}</p>
         <a className='button-two'> Read More</a>
       </div>
