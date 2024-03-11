@@ -1,0 +1,58 @@
+import Logo from './images/Logo.png'
+import bread from './images/bread.png'
+import veg1 from './images/veg1.png'
+import veg2 from './images/veg2.png'
+import veg3 from './images/veg3.png'
+import veg4 from './images/veg5.jpg'
+import veg5 from './images/veg6.jpg'
+import veg6 from './images/veg8.jpg'
+import veg7 from './images/veg9.jpg'
+import veg8 from './images/veg10.jpg'
+import veg9 from './images/veg11.jpg'
+import veg10 from './images/veg12.jpg'
+import veg11 from './images/veg13.jpg'
+import veg12 from './images/veg14.png'
+import veg13 from './images/veg15.png'
+import veg14 from './images/veg16.png'
+import veg15 from './images/veg17.png'
+import veg16 from './images/veg18.png'
+import veg17 from './images/veg19.png'
+import veg18 from './images/veg20.png'
+import veg19 from './images/veg21.png'
+import sliced from './images/sliced.png'
+import salad from  './images/salad.jpg'
+import egg from './images/egg.png'
+import product from './images/product.png'
+import planting from './images/planting.jpg'
+import man1 from './images/man1.png'
+import lemon from './images/lemon.jpg'
+import kiwi from './images/kiwi.jpg'
+import subscribe from './images/subscribe.jpg'
+import farm from './images/farm.jpg'
+import farm2 from './images/farm2.jpg'
+import farm3 from './images/farm3.jpg'
+import fruits from './images/fruits.png'
+import vegs1 from './images/vegs.jpg'
+import vegs2 from './images/vegs2.jpg'
+import vegs3 from './images/vegs3.jpg'
+import vegs4 from './images/vegs4.jpg'
+import vegs5 from './images/vegs5.jpg'
+import vegs6 from './images/vegs6.png'
+import vegs7 from './images/vegs7.png'
+
+import girl1 from './images/girl1.jpg'
+import girl2 from './images/girl2.jpg'
+import girl3 from './images/girl3.jpg'
+import girl4 from './images/girl4.png'
+
+import bischolate from './images/biscolate.jpg'
+import organic from './images/organic.jpg'
+import juice from './images/juice.jpg'
+
+export   {
+    Logo,bread, veg1, veg2, veg3, veg4, veg5, veg6, veg7, veg8,
+    veg9, veg10, veg11, veg12, veg13, veg14, veg15, veg16, veg17, 
+    veg18, veg19, lemon, sliced, egg, man1, planting, product, 
+    salad, kiwi, subscribe,farm, farm2, farm3, fruits, vegs1, vegs2, 
+    vegs3, vegs4,vegs5, vegs6, vegs7, girl1, girl2, girl3, girl4, organic, bischolate, juice
+}

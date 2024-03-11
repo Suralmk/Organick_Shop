@@ -1,0 +1,50 @@
+.product-container {
+    width: 23.5%;
+    height: 400px;
+    background: var(--color-five);
+    padding:10px 0;
+    border-radius: 20px;
+}
+.product-catagory {
+    padding:5px 10px;
+    border-radius: 5px;
+    background: var(--color-one);
+    width: max-content;
+    margin: 10px;
+    color: white;
+}
+.product-image {
+    background: white;
+    width: 100%;
+    height: 250px;
+}
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profuct-name {
+    margin: 10px ;
+}
+hr {
+    margin: 10px;
+}
+.product-bottom-section {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product-prev-price {
+    text-decoration:line-through;
+    color: rgba(78, 78, 78, 0.521);
+}
+.product-price {
+    color: var(--color-one);
+    font-weight: bolder;
+}

@@ -1,0 +1,22 @@
+.testimonal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 60%;
+}
+.testimonal .text {
+    text-align: center;
+}
+.testimonal-image {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

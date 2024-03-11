@@ -1,0 +1,301 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* =================================================
+                    Hero Section
+===================================================*/
+.homepage-hero_container {
+    width: 100%;
+    height:800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homepage-hero_container-left {
+    width: 50%;
+    padding:200px 50px 200px 200px;
+    background: var(--color-five);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.homepage-hero_container-right {
+    width: 50%;
+    height: 100%;
+}
+.homepage-hero_container-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*====================================
+            Banners Container
+=====================================*/
+
+.homepage-banner_container {
+    width: 100%;
+    height: 480px;
+
+}
+.homepage-banner_wrapper {
+    max-width: 1400px;
+    padding: 100px 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+.homepage-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.homepage-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    z-index: -5;
+}
+
+/*====================================
+            About US Container
+=====================================*/
+.homepage-aboutus_container {
+    width: 100%;
+    background: var(--color-five);
+    height: auto;
+}
+.homepage-aboutus_wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.homepage-aboutus_wrapper-left {
+    width: 50%;
+}
+.homepage-aboutus_wrapper-left img{
+    width: 100%;
+    height: 100%;
+}
+.homepage-aboutus_wrapper-right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutus-services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutus-service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-us-icon {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    width: max-content;
+    height: max-content;
+    border-radius: 15px;
+}
+.about-us-icon img {
+    width: 50px;
+    height: 50px;
+}
+/*====================================
+           Products Container
+=====================================*/
+.homepage-products_container {
+    width: 100%;
+    height: auto;
+}
+
+.homepage-products_wrapper {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.producst_catagory-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.homepage-products_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+/*====================================
+           Testimonal Container
+=====================================*/
+
+.homepage-testimonal_container {
+    width: 100%;
+    height: auto;
+    background: var(--color-five);
+}
+.homepage-testimonal-wrapper {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.testimonals-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/*====================================
+           Offer Container
+=====================================*/
+.homepage-offer_container {
+    width: 100%;
+    height: auto;
+    background: var(--color-one);
+}
+.homepage-offer_wrapper {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.offer-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.offer-header .offer-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.offer-header h2 {
+    color: white;
+}
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+/*====================================
+           Eco Container
+=====================================*/
+.homepage-eco_container {
+    width: 100%;
+    height: auto;
+    background: var(--color-six);
+}
+.homepage-eco_wrapper {
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.eco-image {
+    width: 50%;
+    height:800px; 
+}
+.eco-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.eco-brief {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    background: rgb(253, 253, 253);
+    top: 50%;
+    bottom: 50%;
+    transform:translateY(-50%);
+    right: 150px;
+    padding: 80px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.eco-brief_content {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+/*====================================
+           Cards Container
+=====================================*/
+.homepage-second-banner_container {
+    width: 100%;
+    height: auto;
+    background:hsl(142, 28%, 60%, 0.2);
+}
+.homepage-second-banner_wrapper {
+    padding: 120px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap:30px ;
+}
+
+/*====================================
+           News Container
+=====================================*/
+.homepage-news_container {
+    width: 100%;
+    height: auto;
+}
+.homepage-news_wrapper {
+    padding: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap:30px ;
+    margin: 0 auto;
+}
