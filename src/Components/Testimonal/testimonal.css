@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    margin: 0 auto;
     width: 60%;
 }
 .testimonal .text {
@@ -11,7 +12,7 @@
 .testimonal-image {
     width: 100px;
     height: 100px;
-    background: red;
+    background: rgb(255, 255, 255);
     border-radius: 50%;
     overflow: hidden;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './homepage.css'
 import { fruits, vegs6, vegs7, girl1, farm } from '../../assets/images'
 import { FiAward } from 'react-icons/fi'
@@ -8,53 +8,152 @@ import { organic, quality } from '../../assets/icons'
 import Testimonal from '../../Components/Testimonal/Testimonal'
 import Banner2 from '../../Components/Banner2/Banner2'
 import News from '../../Components/News/News'
+import { motion } from 'framer-motion'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 const Homepage = () => {
+  var scrollRef = useRef(null)
+  var settings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  }
+
   return (
     <div className='homepage-container'>
       {/*Hero section */}
       <div className='homepage-hero_container'>
-        <div className='homepage-hero_container-left'>
-          <p className='curly-text'>100% Natural Food</p>
-          <h1>Choose the best healthier way of life</h1>
-          <button className='button-two'>Explore Now</button>
-        </div>
+        <motion.div className='homepage-hero_container-left'>
+          <motion.p
+            className='curly-text'
+            initial={{ x: -150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.2 }}
+          >
+            100% Natural Food
+          </motion.p>
+          <motion.h1
+            initial={{ x: -150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.5 }}
+          >
+            Choose the best healthier way of life
+          </motion.h1>
+          <motion.button
+            className='button-two'
+            initial={{ x: -150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+          >
+            Explore Now
+          </motion.button>
+        </motion.div>
         <div className='homepage-hero_container-right'>
-          <img src={fruits} alt='' />
+          <motion.img
+            src={fruits}
+            alt=''
+            initial={{ x: 300 }}
+            transition={{
+              ease: 'linear',
+              duration: 3,
+              x: { duration: 1 }
+            }}
+            animate={{
+              x: 0,
+              transitionEnd: {
+                opacity: 1
+              }
+            }}
+          />
         </div>
       </div>
 
       {/*Banners section */}
-      <div className='homepage-banner_container'>
+      <div className='homepage-banner_container' ref={scrollRef}>
         <div className='homepage-banner_wrapper'>
-          <div className='homepage-banner'>
+          <motion.div
+            className='homepage-banner'
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
             <p className='curly-text'>Natural!!</p>
             <h2>Get Garden Dresh Fruits</h2>
             <img src={vegs6} alt='' />
-          </div>
-          <div className='homepage-banner'>
+          </motion.div>
+          <motion.div
+            className='homepage-banner'
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.7 }}
+          >
             <p className='curly-text'>Offer!!</p>
             <h2>Get 10% off on vegtables</h2>
             <img src={vegs7} alt='' />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* About us section */}
       <div className='homepage-aboutus_container'>
         <div className='homepage-aboutus_wrapper'>
-          <div className='homepage-aboutus_wrapper-left'>
+          <motion.div
+            className='homepage-aboutus_wrapper-left'
+            initial={{ y: 150, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.4 }}
+          >
             <img src={fruits} alt='' />
-          </div>
+          </motion.div>
           <div className='homepage-aboutus_wrapper-right'>
-            <p className='curly-text'>About Us</p>
-            <h2>We Believe in Working Accredited Farmers</h2>
-            <p className='text'>
+            <motion.p
+              className='curly-text'
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.1 }}
+            >
+              About Us
+            </motion.p>
+            <motion.h2
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.3 }}
+            >
+              We Believe in Working Accredited Farmers
+            </motion.h2>
+            <motion.p
+              className='text'
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.5 }}
+            >
               Simply dummy text of the printing and typesetting industry. Lorem
               had ceased to been the industry s standard dummy text ever since
               the 1500s, when an unknown printer took a galley.
-            </p>
+            </motion.p>
             <div className='aboutus-services'>
-              <div className='aboutus-service'>
+              <motion.div
+                className='aboutus-service'
+                initial={{ y: 150, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, delay: 0.7 }}
+              >
                 <div className='about-us-icon'>
                   <img src={organic} alt='' />
                 </div>
@@ -71,9 +170,15 @@ const Homepage = () => {
                     Lorem Ipsum
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='aboutus-service'>
+              <motion.div
+                className='aboutus-service'
+                initial={{ y: 150, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, delay: 0.9 }}
+              >
                 <div className='about-us-icon'>
                   <img src={quality} alt='' />
                 </div>
@@ -90,9 +195,17 @@ const Homepage = () => {
                     Lorem Ipsum
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
-            <button className='button-one'>Shop Now</button>
+            <motion.button
+              className='button-one'
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 1.2 }}
+            >
+              Shop Now
+            </motion.button>
           </div>
         </div>
       </div>
@@ -104,11 +217,11 @@ const Homepage = () => {
             <p className='curly-text'>Catagories</p>
             <h2>Our Products</h2>
           </div>
-          <div className='homepage-products_container'>
+          <motion.div className='homepage-products_container'>
             {products.map((product, key) => (
               <Product product={product} key={key} />
             ))}
-          </div>
+          </motion.div>
           <button className='button-one'>Learn More</button>
         </div>
       </div>
@@ -120,9 +233,13 @@ const Homepage = () => {
             <p className='curly-text'>Testimonals</p>
             <h2>What our customers saying?</h2>
           </div>
-          {testimonals.map((testimonal, key) => (
-            <Testimonal key={key} testimonal={testimonal} />
-          ))}
+          <div className='testimonal-slider'>
+            <Slider {...settings}>
+              {testimonals.map((testimonal, key) => (
+                <Testimonal key={key} testimonal={testimonal} />
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
 
@@ -149,9 +266,22 @@ const Homepage = () => {
       <div className='homepage-eco_container'>
         <div className='homepage-eco_wrapper'>
           <div className='eco-image'>
-            <img src={farm} alt='' />
+            <motion.img
+              src={farm}
+              alt=''
+              initial={{ x: -150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.2 }}
+            />
           </div>
-          <div className='eco-brief'>
+          <motion.div
+            className='eco-brief'
+            initial={{ y: -150, opacity: 0 }}
+            whileInView={{ y: '-50%', opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.2 }}
+          >
             <p className='curly-text'>Eco Friendly</p>
             <h2>Econis is a Friendly Organic Store</h2>
             <div className='eco-brief_content'>
@@ -175,7 +305,7 @@ const Homepage = () => {
                 accusantium doloremque laudantium. Sed ut perspiciatis
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

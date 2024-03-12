@@ -34,7 +34,24 @@
     display: flex;
     justify-content: space-between;
 }
-.projectdetail-description {
-    margin-top: 100px;
-}
 
+
+.projectdetail-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 200px 250px 0;
+}
+.projectdetail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.projectdetail-wrapper img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+}

@@ -51,11 +51,12 @@ import juice from './images/juice.jpg'
 import shop from './images/shop.jpg'
 import projects from './images/projects.jpg'
 import project2 from './images/project2.jpg'
+import farm4 from './images/farm4.jpg'
 export   {
     Logo,bread, veg1, veg2, veg3, veg4, veg5, veg6, veg7, veg8,
     veg9, veg10, veg11, veg12, veg13, veg14, veg15, veg16, veg17, 
     veg18, veg19, lemon, sliced, egg, man1, planting, product, 
     salad, kiwi, subscribe,farm, farm2, farm3, fruits, vegs1, vegs2, 
     vegs3, vegs4,vegs5, vegs6, vegs7, girl1, girl2, girl3, girl4, organic, 
-    bischolate, juice, shop, projects, project2
+    bischolate, juice, shop, projects, project2, farm4
 }

@@ -90,3 +90,36 @@
     width: auto;
     height: 100%;
 }
+#pages {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.pages-link {
+    position: relative;
+}
+.pages-link ul {
+    position: absolute;
+    flex-direction: column;
+    gap: 20px;
+    left: -15px;
+    z-index: 10;
+    padding: 15px 30px;
+    background: white;
+    width: max-content;
+    display: none;
+    border-radius: 10px;
+    animation:  links 0.6s;
+}
+.pages-link:hover  .links {
+    display: flex;
+}
+@keyframes links {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}

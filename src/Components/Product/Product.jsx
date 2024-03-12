@@ -2,14 +2,23 @@ import React from 'react'
 import { fruits } from '../../assets/images'
 import { Link } from 'react-router-dom'
 import './product.css'
-const Product = ({product}) => {
+import { motion } from 'framer-motion'
+const Product = ({ product }) => {
   return (
-    <div className='product-container'>
+    <motion.div
+      className='product-container'
+      initial={{ y: 150, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, delay: 0.2 }}
+    >
       <p className='product-catagory'>{product.catagory}</p>
       <div className='product-image'>
         <img src={product.image} alt='' />
       </div>
-      <Link to="/shop-detail"><h5 className='profuct-name'>{product.name}</h5></Link>
+      <Link to='/shop-detail'>
+        <h5 className='profuct-name'>{product.name}</h5>
+      </Link>
 
       <hr />
       <div className='product-bottom-section'>
@@ -19,7 +28,7 @@ const Product = ({product}) => {
         </div>
         <div className='product-rating'>* * * * *</div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

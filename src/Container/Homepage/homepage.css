@@ -183,6 +183,17 @@
     width: 100%;
     gap: 10px;
 }
+.testimonal-slider {
+    max-width: 1350px;
+}
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
 
 /*====================================
            Offer Container

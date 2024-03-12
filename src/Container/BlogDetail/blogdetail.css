@@ -32,7 +32,7 @@
     box-shadow: rgba(36, 34, 34, 0.199) 0 5px 20px;
 }
 .blogdetail-wrapper {
-    padding: 170px 250px  0 250px;
+    padding: 170px 250px  0;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
