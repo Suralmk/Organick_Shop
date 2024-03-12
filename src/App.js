@@ -10,6 +10,9 @@ import Blog from './Container/Blog/Blog'
 import BlogDetail from './Container/BlogDetail/BlogDetail'
 import Shop from './Container/Shop/Shop'
 import ShopDetail from './Container/ShopDetail/ShopDetail'
+import Project from './Container/Project/Project'
+import ProductDetail from './Components/ProductDetail/ProductDetail'
+import ProjectDetail from './Container/ProjectDetal/ProjectDetail'
 function App () {
   return (
     <div className=''>
@@ -20,6 +23,8 @@ function App () {
         <Route path='/blog-detail' element={<BlogDetail />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/shop-detail' element={<ShopDetail />} />
+        <Route path='/projects' element={<Project />} />
+        <Route path='/project-detail' element={<ProjectDetail />} />
       </Router>
 
       <Footer />

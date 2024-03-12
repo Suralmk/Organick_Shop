@@ -1,0 +1,38 @@
+.shopdetail-wrapper {
+    padding: 100px 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.shopdetail-additional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.additional-btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.additional-btns .button-two {
+    background: #7eb69348;
+}
+.shopdetail-additional .text {
+    text-align: center;
+    width: 70%;
+}
+.shopdetail-related {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.related-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}

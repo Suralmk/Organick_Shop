@@ -51,3 +51,9 @@
 .sticky + .shopdetail-container {
   padding-top: 105px;
 }
+.sticky + .project-container {
+  padding-top: 105px;
+}
+.sticky + .projectdetail-container {
+  padding-top: 105px;
+}

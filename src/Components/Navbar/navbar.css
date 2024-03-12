@@ -1,16 +1,16 @@
 .navbar-container {
     width: 100%;
-    padding:30px 80px;
+    padding:30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: white;
 }
  .sticky {
-    padding: 20px 80px;
+    padding: 20px 50px;
     position: fixed;
     top: 0;
     z-index: 5;
-    background: white;
     transition: all 0.4s;
 }
 

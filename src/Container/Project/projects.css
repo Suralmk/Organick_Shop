@@ -1,0 +1,13 @@
+.project-container {
+    width: 100%;
+    height: auto;
+}
+.project-wrapper {
+    max-width: 1400px;
+    padding: 100px 100px 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
