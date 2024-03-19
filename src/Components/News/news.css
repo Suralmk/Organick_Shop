@@ -1,6 +1,6 @@
 .news_container {
     height: 450px;
-    width: 50%;
+    width: 100%;
     background: rgb(255, 254, 254);
     border-radius: 25px;
     position: relative;
@@ -37,4 +37,20 @@
 }
 .news-auth-icon {
     color:#fff38a
+}
+@media screen and (max-width:600px) {
+    .news_container {
+        height: 350px;
+    }
+    .news_container .news-content {
+        padding:  30px;
+    }
+}
+@media screen and (max-width:500px) {
+    .news_container {
+        height: 300px;
+    }
+    .news_container .news-content {
+        padding:  25px;
+    }
 }

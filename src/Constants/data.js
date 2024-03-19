@@ -1,53 +1,60 @@
-import  {veg1, veg2, veg3, veg14, organic, bischolate,juice,  veg4, veg5, veg6, veg7, veg8, veg9, egg, bread, lemon, girl1, girl2, girl3, girl4, man1, vegs7}  from "../assets/images"
+import  {veg1, veg2, veg3, veg14, organic, bischolate,juice,  veg4, veg5, veg6, veg7, veg8, veg9, egg, bread, lemon, girl1, girl2, girl3, girl4, man1, vegs7, man2}  from "../assets/images"
 const products = [
     {
         "name":"Cabbage",
         "catagory":"Vegateble",
         "price" : 30,
         "prev_price" :45,
-        "image": veg1
+        "image": veg1,
+        "id":0
     },
     {
         "name":"Fresh Carrots",
         "catagory":"Fresh",
         "price" : 14,
         "prev_price" :18,
-        "image": veg5
+        "image": veg5,
+        "id":1
     },
     {
         "name":"Eggs",
         "catagory":"Fresh",
         "price" : 17,
         "prev_price" :23,
-        "image": egg
+        "image": egg,
+        "id":2
     },
     {
         "name":"Zelco Suji Elaichi Rusk",
         "catagory":"Fresh",
         "price" : 11,
         "prev_price" :23,
-        "image": bread
+        "image": bread,
+        "id":3
     },
     {
         "name":"Brown Hazlenut",
         "catagory":"Nuts",
         "price" : 12,
         "prev_price" :15,
-        "image": veg14
+        "image": veg14,
+        "id":4
     },
     {
         "name":"Green Lemons",
         "catagory":"Fresh",
         "price" : 12,
         "prev_price" :15,
-        "image": lemon
+        "image": lemon,
+        "id":5
     },
     {
         "name":"Mung Bean",
         "catagory":"Health",
         "price" : 12.8,
         "prev_price" :15,
-        "image": veg3
+        "image": veg3,
+        "id":6
     },
 ]
 
@@ -128,4 +135,40 @@ const news = [
         "sub_title" : "Simply dummy text of the printing and typesetting  industry. Lorem Ipsum"
     }
 ]
-export {testimonals, products, banner2, news}
+const chooseReasons = [
+    {
+        "reason":"Return Ploicy",
+        "description" : "Simply dummy text ofthe printinty pesetting industry"
+    },
+    {
+        "reason":"100% Fresh",
+        "description" : "Simply dummy text ofthe printinty pesetting industry"
+    },
+    {
+        "reason":"Support 24/7",
+        "description" : "Simply dummy text ofthe printinty pesetting industry"
+    },
+    {
+        "reason":"Secured Payment",
+        "description" : "Simply dummy text ofthe printinty pesetting industry"
+    },
+]
+
+const teams = [
+    {
+        "name" : "Giovani Bacardo",
+        "role": "farmer",
+        "image" : man2
+    },
+    {
+        "name" : "Marianne Loreno",
+        "role": "Designer",
+        "image" : girl1
+    },
+    {
+        "name" : "Riga Pelore",
+        "role": "Manager",
+        "image" : girl3
+    },
+]
+export {testimonals, products, banner2, news, chooseReasons, teams}

@@ -9,7 +9,9 @@ const Blog = () => {
         <div className="blogpage-hero">
             <img src={vegs4} alt="" />
             <div className="blogpage-hero-content">
-                <h2>Recent News</h2>
+                <h2 style={{
+            width: "max-content"
+          }}>Recent News</h2>
             </div>
         </div>
       <div className='blog-news'>

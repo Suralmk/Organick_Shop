@@ -9,8 +9,9 @@ const Footer = () => {
       <div className='footer_wrapper'>
         <div className='footer_subscription'>
           <img src={subscribe} alt='' />
-          <h2>Subscribe to our Newsletter</h2>
+        
           <div className='footer_subscription-form'>
+          <h2>Subscribe to our Newsletter</h2>
             <form>
               <input type='email' placeholder='email' name='email' />
               <button className='button-one'>Subscribe</button>

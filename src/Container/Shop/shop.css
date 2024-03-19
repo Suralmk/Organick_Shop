@@ -6,6 +6,20 @@
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     grid-gap: 30px;
 }
-.shop-products .product-container {
+.shop-products {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 15px;
+    grid-gap: 30px;
+}
+@media screen and (max-width:1000px) {
+    .shop-products {
+        padding: 120px 50px;
+    }
+}
+@media screen and (max-width:600px) {
+    .shop-products {
+        padding: 50px 20px;
+    }
 }

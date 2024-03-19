@@ -28,3 +28,30 @@
     align-items: center;
     gap: 10px;
 }
+@media screen and (max-width:1000px) {
+    .product-detail-container {
+        gap: 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .product-detail-container {
+       flex-direction: column;
+    }
+    .product-detail-image {
+        width: 100%;
+    }
+    .product-detail-description {
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px) {
+    .product-detail-container {
+       flex-direction: column;
+    }
+    .product-detail-image {
+        width: 100%;
+    }
+    .product-detail-description {
+        width: 100%;
+    }
+}

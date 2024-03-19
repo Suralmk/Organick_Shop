@@ -217,7 +217,7 @@ const Homepage = () => {
             <p className='curly-text'>Catagories</p>
             <h2>Our Products</h2>
           </div>
-          <motion.div className='homepage-products_container'>
+          <motion.div className='homepage-products-container'>
             {products.map((product, key) => (
               <Product product={product} key={key} />
             ))}

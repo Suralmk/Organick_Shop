@@ -5,10 +5,12 @@ import { BiSearch, BiCart } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { FaChevronDown } from 'react-icons/fa'
 import { GrMenu, GrClose } from 'react-icons/gr'
+import Cart from '../../Container/Cart/Cart'
 
 const Navbar = () => {
-  const  navbarRef  = useRef(null)
+  const navbarRef = useRef(null)
   const [mobileMenu, setMobileMenu] = useState(false)
+  const [showCart, setShowCart] = useState(false)
   window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar-container')
     navbar.classList.toggle('sticky', this.window.scrollY > 1)
@@ -36,18 +38,25 @@ const Navbar = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='#'>About</a>
+            <Link to='/about-us'>About</Link>
           </li>
           <li className='pages-link'>
             <a id='pages'>
               Pages <FaChevronDown size={15} style={{ marginLeft: 5 }} />
             </a>
             <ul className='links'>
-              <li>Projects</li>
-              <li>Services</li>
-              <li>Contact</li>
-              <li>News</li>
-              <li>Licences</li>
+              <li>
+                <Link to='/projects'>Projects</Link>{' '}
+              </li>
+              <li>
+                <Link to='/news'>News</Link>{' '}
+              </li>
+              <li>
+                <Link to='/contact'>Contact</Link>{' '}
+              </li>
+              <li>
+                <Link to='/licence'>Licence</Link>{' '}
+              </li>
             </ul>
           </li>
           <li>
@@ -64,13 +73,17 @@ const Navbar = () => {
       <div className='navbar-search_cart'>
         <div className='navbar-search'>
           <input type='text' />
-          <BiSearch className='search_icon' size={20} />
+          <BiSearch className='search_icon' size={10} />
         </div>
         <div className='navbar-cart'>
-          <a href=''>
+          <a
+            onClick={() => {
+              setShowCart(!showCart)
+            }}
+          >
             {' '}
             <span>Cart</span>
-            <BiCart className='cart_icon ' size={20} />
+            <BiCart className='cart_icon ' size={15} />
           </a>
         </div>
         <div className='navbar-mobiemenu'>
@@ -87,6 +100,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <Cart showCart={showCart} closeCart={setShowCart} />
     </div>
   )
 }

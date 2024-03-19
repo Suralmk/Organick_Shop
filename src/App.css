@@ -57,3 +57,15 @@
 .sticky + .projectdetail-container {
   padding-top: 105px;
 }
+.sticky + .about-container {
+  padding-top: 105px;
+}
+.sticky + .servicedetail-container {
+  padding-top: 105px;
+}
+.sticky + .service-container {
+  padding-top: 105px;
+}
+.sticky + .contact-container {
+  padding-top: 105px;
+}

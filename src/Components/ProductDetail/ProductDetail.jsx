@@ -1,17 +1,17 @@
 import React from 'react'
 import { veg17 } from '../../assets/images'
 import './productdetail.css'
-const ProductDetail = () => {
+const ProductDetail = ({product}) => {
   return (
     <div className='product-detail-container'>
       <div className='product-detail-image'>
-        <img src={veg17} alt='' />
+        <img src={product.image} alt='' />
       </div>
       <div className='product-detail-description'>
-        <h4>Dark Red Onions</h4>
+        <h4>{product.name}</h4>
         <div className='product-price-container'>
-          <p className='product-prev-price'>$12</p>
-          <p className='product-price'>$10</p>
+          <p className='product-prev-price'>${product.prev_price}</p>
+          <p className='product-price'>${product.price}</p>
         </div>
         <p className='text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere

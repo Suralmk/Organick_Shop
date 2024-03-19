@@ -4,7 +4,8 @@
     gap: 15px;
     align-items: center;
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
+    padding: 20px;
 }
 .testimonal .text {
     text-align: center;

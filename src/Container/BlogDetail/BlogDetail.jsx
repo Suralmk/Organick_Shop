@@ -27,13 +27,8 @@ const BlogDetail = () => {
             </p>
             <p>By Surafel Melaku</p>
           </div>
-          <h1>Research More organic Food</h1>
-          <p
-            className='text'
-            style={{
-              width: 630
-            }}
-          >
+          <h2>Research More organic Food</h2>
+          <p className='text blog-header-text'>
             Established fact that a reader will be distracted by the readable
             content of a page when looking a layout. The point of using Lorem
             Ipsum is that it has a more-or-less normal distribution of letters,

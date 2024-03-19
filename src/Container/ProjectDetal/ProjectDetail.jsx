@@ -24,9 +24,7 @@ const ProjectDetail = () => {
             <h2>Research More organic Food</h2>
             <p
               className='text'
-              style={{
-                width: 600
-              }}
+              
             >
               Established fact that a reader will be distracted by the readable
               content of a page when looking a layout. The point of using Lorem

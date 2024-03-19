@@ -6,8 +6,19 @@
     max-width: 1400px;
     padding: 100px 100px 0;
     margin: 0 auto;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 15px;
+    grid-gap: 30px;
+}
+@media screen and (max-width:900px) {
+    .project-wrapper {
+        padding: 100px 50px ;
+    }
+}
+@media screen and (max-width:600px) {
+    .project-wrapper {
+        padding: 100px 20px ;
+    }
 }

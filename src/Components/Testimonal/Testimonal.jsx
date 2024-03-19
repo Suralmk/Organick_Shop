@@ -7,7 +7,7 @@ const Testimonal = ({ testimonal }) => {
         <img src={testimonal.image} alt='' />
       </div>
       <div className='testimonal-rating'>* * * * *</div>
-      <p className='text'>{testimonal.saying}</p>
+      <p className='text' style={{ width : "100%"}}>{testimonal.saying}</p>
       <h6>{testimonal.name}</h6>
     </div>
   )

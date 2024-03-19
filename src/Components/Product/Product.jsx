@@ -16,7 +16,7 @@ const Product = ({ product }) => {
       <div className='product-image'>
         <img src={product.image} alt='' />
       </div>
-      <Link to='/shop-detail'>
+      <Link to={`/shop-detail/${product.id + 1}`} state={{ "image" : product.image, "name" : product.name, "price" :product.price, "prev_price" : product.prev_price }}>
         <h5 className='profuct-name'>{product.name}</h5>
       </Link>
 

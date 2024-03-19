@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 15px;  
   height: 400px;
-  width: 32%;
+  width: 100%;
   position: relative;
 }
 .singleproject-container img {

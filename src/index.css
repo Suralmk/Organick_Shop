@@ -144,3 +144,14 @@ h6 {
   font-weight: 16px;
   line-height: 25px;
 }
+
+
+@media screen and (max-width:600px) {
+  .button-one, .button-two, .button-three, .button-four {
+    padding: 15px 30px;
+    width: fit-content;
+  }
+  h2 {
+    font-size: 35px;
+  }
+}
