@@ -42,9 +42,6 @@ const ProductDetail = ({ product, addToCart }) => {
           />
           <button
             className='button-one'
-            onClick={
-              addProductToCart(product)
-            }
           >
             Add to Cart
           </button>
