@@ -3,14 +3,15 @@ import { veg17 } from '../../assets/images'
 import './productdetail.css'
 
 const ProductDetail = ({ product, addToCart }) => {
-  const ItemRef = useRef()
-  const [itemNumber, setItemNumber] = useState()
+  const ItemRef = useRef(null)
+  const [itemNumber, setItemNumber] = useState(0)
 
   const addProductToCart = product => {
-    if (itemNumber === 0) {
-      ItemRef.current.style.borderColor = 'blue';
-    } else {
+    if (itemNumber != 0) {
+      
       addToCart(product, itemNumber)
+    } else {
+      console.log("change color of input to red")
     }
   }
   return (

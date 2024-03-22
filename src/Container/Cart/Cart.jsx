@@ -7,10 +7,6 @@ import { fruits } from '../../assets/images'
 const Cart = ({ showCart, closeCart }) => {
   return (
     <motion.div
-      initial={{ y: 150, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1.5, delay: 0.2 }}
       className={`cart-container ${showCart ? 'modal-open' : ''}`}
     >
       <div className='cart-wrapper'>
