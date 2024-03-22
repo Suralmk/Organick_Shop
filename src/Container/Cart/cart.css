@@ -21,7 +21,7 @@
 }
 
 .cart-wrapper {
-    height: 400px;
+    height: 700px;
     width: 400px;
     background: white;
     padding: 30px;
@@ -30,6 +30,7 @@
     position: relative;
     overflow-y: scroll;
 }
+
 .close-modal {
     width: max-content;
     position: absolute;
@@ -43,5 +44,13 @@
     gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 2000px;
+    height:400%;
+    overflow-y: scroll;
+    position: static;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.cart-wrapper .items::-webkit-scrollbar {
+    display: none;
 }

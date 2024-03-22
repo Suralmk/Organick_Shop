@@ -1,7 +1,7 @@
-import  {veg1, veg2, veg3, veg14, organic, bischolate,juice,  veg4, veg5, veg6, veg7, veg8, veg9, egg, bread, lemon, girl1, girl2, girl3, girl4, man1, vegs7, man2}  from "../assets/images"
+import  {veg1, veg2, veg3, veg14, organic, bischolate,juice,  veg4, veg5, veg6, veg7, veg8, veg9, egg, bread, lemon, girl1, girl2, girl3, veg18, veg12, man1, vegs7, man2, project2, veg13, diary,vegs5, veg19, veg11}  from "../assets/images"
 const products = [
     {
-        "name":"Cabbage",
+        "name":"Broccoli",
         "catagory":"Vegateble",
         "price" : 30,
         "prev_price" :45,
@@ -9,11 +9,11 @@ const products = [
         "id":0
     },
     {
-        "name":"Fresh Carrots",
-        "catagory":"Fresh",
+        "name":"Fresh Banana",
+        "catagory":"Fruits",
         "price" : 14,
         "prev_price" :18,
-        "image": veg5,
+        "image": veg12,
         "id":1
     },
     {
@@ -54,6 +54,14 @@ const products = [
         "price" : 12.8,
         "prev_price" :15,
         "image": veg3,
+        "id":6
+    },
+    {
+        "name":"Cabbage",
+        "catagory":"Fresh",
+        "price" : 14.8,
+        "prev_price" :18.00,
+        "image": veg18,
         "id":6
     },
 ]
@@ -171,4 +179,36 @@ const teams = [
         "image" : girl3
     },
 ]
-export {testimonals, products, banner2, news, chooseReasons, teams}
+const oprojects = [
+    {
+        "name" : "Value-Added Processing Facility",
+        "area": "Food",
+        "image": project2
+    },
+    {
+        "name" : "Herbal Medicine Cultivation Cooperative",
+        "area": "Herbs",
+        "image": veg19
+    },
+    {
+        "name" : "Aquaculture Collective",
+        "area": "AgroIndustries",
+        "image" : veg11
+    },
+    {
+        "name" : "Fruits Cooperative",
+        "area": "Fruits",
+        "image": organic
+    },
+    {
+        "name" : "Dairy Farming Collective",
+        "area": "Diary",
+        "image": diary
+    },
+    {
+        "name" : "Organic Produce Farming Cooperative",
+        "area": "Vegtables",
+        "image": vegs5
+    },
+]
+export {testimonals, products, banner2, news, chooseReasons, teams, oprojects}

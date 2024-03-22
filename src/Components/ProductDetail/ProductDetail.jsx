@@ -1,6 +1,8 @@
 import React from 'react'
 import { veg17 } from '../../assets/images'
 import './productdetail.css'
+
+
 const ProductDetail = ({product}) => {
   return (
     <div className='product-detail-container'>

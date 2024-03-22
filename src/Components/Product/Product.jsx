@@ -3,6 +3,7 @@ import { fruits } from '../../assets/images'
 import { Link } from 'react-router-dom'
 import './product.css'
 import { motion } from 'framer-motion'
+import { IoIosStar } from "react-icons/io";
 const Product = ({ product }) => {
   return (
     <motion.div
@@ -26,7 +27,13 @@ const Product = ({ product }) => {
           <p className='product-prev-price'>${product.prev_price}</p>
           <p className='product-price'>${product.price}</p>
         </div>
-        <div className='product-rating'>* * * * *</div>
+        <div className='rating'>
+          <IoIosStar />
+          <IoIosStar />
+          <IoIosStar />
+          <IoIosStar />
+          <IoIosStar />
+          </div>
       </div>
     </motion.div>
   )

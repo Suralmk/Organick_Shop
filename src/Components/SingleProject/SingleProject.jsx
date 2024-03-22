@@ -4,7 +4,7 @@ import './singleproject.css'
 import { FaChevronRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
-const SingleProject = () => {
+const SingleProject = ({project}) => {
   return (
     <motion.div
       className='singleproject-container'
@@ -13,10 +13,10 @@ const SingleProject = () => {
       viewport={{ once: true }}
       transition={{ duration: 1.5, delay: 0.2 }}
     >
-      <img src={vegs4} alt='' />
+      <img src={project.image} alt='' />
       <div className='singleproject-detail'>
-        <h6>Grren Tasy Lemon</h6>
-        <p className='curly-text'>Fruit</p>
+        <h6>{project.name}</h6>
+        <p className='curly-text'>{project.area}</p>
       </div>
       <div className='project-review'>
         <Link to='/project-detail' className='review-link'>

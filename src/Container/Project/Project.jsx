@@ -2,6 +2,7 @@ import React from 'react'
 import './projects.css'
 import { projects } from '../../assets/images'
 import SingleProject from '../../Components/SingleProject/SingleProject'
+import { oprojects } from '../../Constants/data'
 const Project = () => {
   return (
     <div className='project-container'>
@@ -12,12 +13,9 @@ const Project = () => {
             </div>
         </div>
         <div className="project-wrapper">
-        <SingleProject/>
-        <SingleProject/>
-        <SingleProject/>
-        <SingleProject/>
-        <SingleProject/>
-        <SingleProject/>
+          {oprojects.map((project, key) => (
+               <SingleProject project={project} key={key}/>
+          ))}
         </div>
     </div>
   )

@@ -16,6 +16,9 @@ const Cart = ({ showCart, closeCart }) => {
         <h4 style={{ marginTop: 20, marginBottom: 20 }}>Cart</h4>
         <div className='items'>
           <div className='item'>apple</div>
+          <div className='item'>apple</div>
+          <div className='item'>apple</div>
+          <div className='item'>apple</div>
         </div>
         <button className='button-one'>Checkout</button>
       </div>
