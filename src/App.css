@@ -73,6 +73,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  border-radius: 0 50px 50px 0;
 }
 
 /* Track */

@@ -1,11 +1,18 @@
 import React from 'react'
 import './banner2.css'
-const Banner2 = ({image, content}) => {
+import { motion } from 'framer-motion'
+const Banner2 = ({ image, content }) => {
   return (
-    <div className='banner2-container'>
-      <img src={image} alt="" />
-      <p className="button-three">{content}</p>
-    </div>
+    <motion.div
+      className='banner2-container'
+      initial={{ y: 150, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, delay: 0.2 }}
+    >
+      <img src={image} alt='' />
+      <p className='button-three'>{content}</p>
+    </motion.div>
   )
 }
 

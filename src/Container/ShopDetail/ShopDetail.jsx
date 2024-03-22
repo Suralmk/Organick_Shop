@@ -10,7 +10,15 @@ const ShopDetail = () => {
 const prod_id = useParams()
 const location = useLocation()
 const [product, setProduct] = useState(location.state)
-console.log(location)
+
+const [productsInCart, SetProductsInCart] = useState([])
+const addToCart = (product, count) => {
+  const newProduct = {
+    ...Product,
+    count : count
+  }
+  SetProductsInCart([...productsInCart, newProduct])
+}
   return (
     <div className='shopdetail-container'>
       <div className='blogpage-hero'>
@@ -27,7 +35,7 @@ console.log(location)
         </div>
       </div>
       <div className='shopdetail-wrapper'>
-        <ProductDetail product={product} />
+        <ProductDetail product={product} addToCart={addToCart} />
         <div className='shopdetail-additional'>
           <div className='additional-btns'>
             <button className='button-one'>Additional Discription</button>
